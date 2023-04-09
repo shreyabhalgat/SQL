@@ -1,0 +1,17 @@
+/*
+GET THE CUSTOMERS WHOSE 
+FIRST NAMES ARE ELKA OR AMBUR
+LAST NAMMES END WITH EY OR ON
+LAST NAMES START WITH MY OR CONSTAINS SE
+LAST NAMES CONTAINS B FOLLOWED BY R OR U 
+*/
+
+SELECT *
+FROM customers
+-- WHERE first_name REGEXP "ELKA |ambur"
+
+-- WHERE last_name REGEXP "ey$|on$"
+
+-- WHERE last_name REGEXP "^my|se"
+
+WHERE last_name regexp 'br|bu'
